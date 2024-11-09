@@ -7,12 +7,18 @@ import urllib
 import zipcodes
 
 
+
+# Replace with your actual Yelp API Key
+API_KEY = ''
+
 DESTINATION_SCHEMA = "yelp"
 DESTINATION_TABLE = "business_search_results"
 YELP_URL = "https://api.yelp.com/v3/businesses/search?"
 HEADERS = {
   "accept": "application/json",
-  "Authorization": f"Bearer {os.getenv('YELP_API_KEY')}"
+  #exported API Key
+  # "Authorization": f"Bearer {os.getenv('YELP_API_KEY')}"
+   "Authorization": f"Bearer {API_KEY}"
 }
 JSON_COLUMNS = ["categories", "coordinates", "transactions", "location"]
 
@@ -23,6 +29,7 @@ class DummyConnection:
   data from/to -- could be SQLAlchemy, SQLite, etc.
   Update the TODOs below depending on your implementation
   """
+  
   def __init__(
     self,
     connection,
@@ -86,7 +93,7 @@ def yelp_location_search(location: str, term = None) -> pandas.DataFrame:
   and optional `term`, paginating up to the the 1000-result limit
   """
   MAX_LIMIT = 50
-  MAX_RESULTS = 1000
+  MAX_RESULTS = 200
 
   search_url = yelp_search_url(location=location, term=term)
 

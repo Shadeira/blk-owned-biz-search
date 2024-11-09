@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_235ef6b7f7d3a0260205e8cb40c4a1c2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_235ef6b7f7d3a0260205e8cb40c4a1c2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_235ef6b7f7d3a0260205e8cb40c4a1c2 = L.map(
+                "map_235ef6b7f7d3a0260205e8cb40c4a1c2",
+                {
+                    center: [40.7282, -74.0776],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c37cada0c5fd2b38c7333c46d09927ca = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_c37cada0c5fd2b38c7333c46d09927ca.addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var marker_4e8f543dcf227d618d2b785ca2f339b5 = L.marker(
+                [40.691334, -73.9831758],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_dc942044553cb5d78423ac323f4aa9ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4e8f543dcf227d618d2b785ca2f339b5.setIcon(icon_dc942044553cb5d78423ac323f4aa9ac);
+        
+    
+        var popup_13b2ba71daceeb0ee1a292fafdc6f4e3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8311a97861197d54c456bfbf43902a1a = $(`<div id="html_8311a97861197d54c456bfbf43902a1a" style="width: 100.0%; height: 100.0%;">             <b>Da Spot NYC</b><br>             Rating: 5.0<br>             Address: 445 Albee Square W<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/yKIIwxIY5lV3CZu295pAEQ/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_13b2ba71daceeb0ee1a292fafdc6f4e3.setContent(html_8311a97861197d54c456bfbf43902a1a);
+            
+        
+
+        marker_4e8f543dcf227d618d2b785ca2f339b5.bindPopup(popup_13b2ba71daceeb0ee1a292fafdc6f4e3)
+        ;
+
+        
+    
+    
+            var marker_3fb42ad5547fa3c309a26f756220e3e9 = L.marker(
+                [40.70610069274036, -74.01149966579052],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_4370411a7de38f9fc80957046804c342 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3fb42ad5547fa3c309a26f756220e3e9.setIcon(icon_4370411a7de38f9fc80957046804c342);
+        
+    
+        var popup_e7fb97fcaca733beed26cad81bddaca9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d13baca6833b6d127a9b113c26e6615e = $(`<div id="html_d13baca6833b6d127a9b113c26e6615e" style="width: 100.0%; height: 100.0%;">             <b>Grapple Box</b><br>             Rating: 5.0<br>             Address: 66 Frankfort St<br>             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/1Ko4n2JEjRHqhnGzx6g4zQ/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_e7fb97fcaca733beed26cad81bddaca9.setContent(html_d13baca6833b6d127a9b113c26e6615e);
+            
+        
+
+        marker_3fb42ad5547fa3c309a26f756220e3e9.bindPopup(popup_e7fb97fcaca733beed26cad81bddaca9)
+        ;
+
+        
+    
+    
+            var marker_c074d3fb39d746b2c2640caff426bdb5 = L.marker(
+                [40.65185, -74.12792],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_d0ddb6a6325c1ca8b253f2a9c03bae13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c074d3fb39d746b2c2640caff426bdb5.setIcon(icon_d0ddb6a6325c1ca8b253f2a9c03bae13);
+        
+    
+        var popup_742c469287b7d3a79063de46e8f738b6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b98db97b8f54375fefd73ca2e2e199c9 = $(`<div id="html_b98db97b8f54375fefd73ca2e2e199c9" style="width: 100.0%; height: 100.0%;">             <b>The Little Boho Bookshop</b><br>             Rating: 5.0<br>             Address: 164A Broadway<br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/FIlIlsZThqy9yf-nc4KabQ/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_742c469287b7d3a79063de46e8f738b6.setContent(html_b98db97b8f54375fefd73ca2e2e199c9);
+            
+        
+
+        marker_c074d3fb39d746b2c2640caff426bdb5.bindPopup(popup_742c469287b7d3a79063de46e8f738b6)
+        ;
+
+        
+    
+    
+            var marker_7d0c593665e5ae0079e8f82268129860 = L.marker(
+                [40.72668, -74.04951],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_4f976de118c59182d94bf032dbce82b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7d0c593665e5ae0079e8f82268129860.setIcon(icon_4f976de118c59182d94bf032dbce82b3);
+        
+    
+        var popup_92bb2b8d50db58f077f50bab1d48fd41 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ec59eae547ddef94d711d6de32fa9e12 = $(`<div id="html_ec59eae547ddef94d711d6de32fa9e12" style="width: 100.0%; height: 100.0%;">             <b>Kevana Wellness</b><br>             Rating: 5.0<br>             Address: 342 7th St<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/IrbIoWTRX-jphyxXYLg84g/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_92bb2b8d50db58f077f50bab1d48fd41.setContent(html_ec59eae547ddef94d711d6de32fa9e12);
+            
+        
+
+        marker_7d0c593665e5ae0079e8f82268129860.bindPopup(popup_92bb2b8d50db58f077f50bab1d48fd41)
+        ;
+
+        
+    
+    
+            var marker_dc701f101aeb2534498aa502fa94f42f = L.marker(
+                [40.7213977, -74.0450445],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_eacccf44ab7f5119332602d833f45f20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dc701f101aeb2534498aa502fa94f42f.setIcon(icon_eacccf44ab7f5119332602d833f45f20);
+        
+    
+        var popup_6f56ba379760b481c1291f1895d4f8f2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0171568f366f52a301ceaabe26c511d4 = $(`<div id="html_0171568f366f52a301ceaabe26c511d4" style="width: 100.0%; height: 100.0%;">             <b>Suite Tee</b><br>             Rating: 5.0<br>             Address: 172 Newark Ave<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/Gt0ZLkq0AvXUFxI85e0Tkw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_6f56ba379760b481c1291f1895d4f8f2.setContent(html_0171568f366f52a301ceaabe26c511d4);
+            
+        
+
+        marker_dc701f101aeb2534498aa502fa94f42f.bindPopup(popup_6f56ba379760b481c1291f1895d4f8f2)
+        ;
+
+        
+    
+    
+            var marker_27d9fc74d4435665de959a574aac250a = L.marker(
+                [40.73746, -74.03203],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_6d39a59b8ae6c2ecd8d63aaf91eba6b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_27d9fc74d4435665de959a574aac250a.setIcon(icon_6d39a59b8ae6c2ecd8d63aaf91eba6b8);
+        
+    
+        var popup_db05db4a3b6f4bce5f61189363d904e8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_69da932647e28904876079633632f37d = $(`<div id="html_69da932647e28904876079633632f37d" style="width: 100.0%; height: 100.0%;">             <b>Bodega Vibez</b><br>             Rating: 4.9<br>             Address: 153 1st St<br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/6AplSNSjLTcChVDoiJHuGA/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_db05db4a3b6f4bce5f61189363d904e8.setContent(html_69da932647e28904876079633632f37d);
+            
+        
+
+        marker_27d9fc74d4435665de959a574aac250a.bindPopup(popup_db05db4a3b6f4bce5f61189363d904e8)
+        ;
+
+        
+    
+    
+            var marker_245bc577055878b4f0997ac1bdf3d791 = L.marker(
+                [40.651915, -73.959405],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_22f853a563e2e57587a4f419dccc5bb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_245bc577055878b4f0997ac1bdf3d791.setIcon(icon_22f853a563e2e57587a4f419dccc5bb8);
+        
+    
+        var popup_41354e817ba9216939bd209671690aba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6788a5e3f1368993d516a928686d6c3a = $(`<div id="html_6788a5e3f1368993d516a928686d6c3a" style="width: 100.0%; height: 100.0%;">             <b>Sweet N Sultry Studio</b><br>             Rating: 5.0<br>             Address: 840 Flatbush Ave<br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/hv5PKIl1xVww-kCgd8CDXQ/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_41354e817ba9216939bd209671690aba.setContent(html_6788a5e3f1368993d516a928686d6c3a);
+            
+        
+
+        marker_245bc577055878b4f0997ac1bdf3d791.bindPopup(popup_41354e817ba9216939bd209671690aba)
+        ;
+
+        
+    
+    
+            var marker_1a522038a502f69f40dabafd63a1ab88 = L.marker(
+                [40.71719, -73.962237],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_59e1ed6cc0f0f4678bc3fc6beff74506 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1a522038a502f69f40dabafd63a1ab88.setIcon(icon_59e1ed6cc0f0f4678bc3fc6beff74506);
+        
+    
+        var popup_63a25f3889153f06ad727de8aaf47c2d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f3648d95929bd5a4542d6d9fa5d7b8cd = $(`<div id="html_f3648d95929bd5a4542d6d9fa5d7b8cd" style="width: 100.0%; height: 100.0%;">             <b>Chicbythelayers</b><br>             Rating: 5.0<br>             Address: 85 N 3rd St<br>             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/XMgBp7Nof4rInpIITjq_Yg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_63a25f3889153f06ad727de8aaf47c2d.setContent(html_f3648d95929bd5a4542d6d9fa5d7b8cd);
+            
+        
+
+        marker_1a522038a502f69f40dabafd63a1ab88.bindPopup(popup_63a25f3889153f06ad727de8aaf47c2d)
+        ;
+
+        
+    
+    
+            var marker_d269cf48cdace6899e0090f168d63860 = L.marker(
+                [40.721787, -74.086552],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_3921cbe193363dd423ce276d8c7b448e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d269cf48cdace6899e0090f168d63860.setIcon(icon_3921cbe193363dd423ce276d8c7b448e);
+        
+    
+        var popup_8e1fc14848bd4d1339d8b45faf1fc10c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d1abe1912c5bf7c013dea804505e368 = $(`<div id="html_0d1abe1912c5bf7c013dea804505e368" style="width: 100.0%; height: 100.0%;">             <b>juicy city</b><br>             Rating: 5.0<br>             Address: 213 Mallory Ave<br>             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/7MuZiRYyIp0dUB7qUwF6RQ/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_8e1fc14848bd4d1339d8b45faf1fc10c.setContent(html_0d1abe1912c5bf7c013dea804505e368);
+            
+        
+
+        marker_d269cf48cdace6899e0090f168d63860.bindPopup(popup_8e1fc14848bd4d1339d8b45faf1fc10c)
+        ;
+
+        
+    
+    
+            var marker_0b751db0499e10359c4ab70cc021a596 = L.marker(
+                [40.71948, -74.04374],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_c6ba87c6d7dcb23de1ff28fa0b1aaa80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b751db0499e10359c4ab70cc021a596.setIcon(icon_c6ba87c6d7dcb23de1ff28fa0b1aaa80);
+        
+    
+        var popup_e3aa784f4ab08b149dda4192aae1d568 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_930237157da832fb7cee67e2f47e8c54 = $(`<div id="html_930237157da832fb7cee67e2f47e8c54" style="width: 100.0%; height: 100.0%;">             <b>JCFit</b><br>             Rating: 4.7<br>             Address: 109 Christopher Columbus Dr<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/pOJQzZVD1K8uyVaLjhV1Ag/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_e3aa784f4ab08b149dda4192aae1d568.setContent(html_930237157da832fb7cee67e2f47e8c54);
+            
+        
+
+        marker_0b751db0499e10359c4ab70cc021a596.bindPopup(popup_e3aa784f4ab08b149dda4192aae1d568)
+        ;
+
+        
+    
+    
+            var marker_0fc451a25d00fbccaa6cf85b794f6aea = L.marker(
+                [40.718523, -74.055141],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_564c09e2e78058eaa19f00d6974af8d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fc451a25d00fbccaa6cf85b794f6aea.setIcon(icon_564c09e2e78058eaa19f00d6974af8d0);
+        
+    
+        var popup_206a385454fdf2de6fd338aa541797a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_204d4f6fe038a5b6140e8440a6ec0a02 = $(`<div id="html_204d4f6fe038a5b6140e8440a6ec0a02" style="width: 100.0%; height: 100.0%;">             <b>EEAB Tires</b><br>             Rating: 4.7<br>             Address: 30 Center St<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/v0wfIbemgLe4Sdguy1miDw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_206a385454fdf2de6fd338aa541797a2.setContent(html_204d4f6fe038a5b6140e8440a6ec0a02);
+            
+        
+
+        marker_0fc451a25d00fbccaa6cf85b794f6aea.bindPopup(popup_206a385454fdf2de6fd338aa541797a2)
+        ;
+
+        
+    
+    
+            var marker_9b3fb349ef94d80328d12e1d72be22dd = L.marker(
+                [40.68294, -73.97874],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_165cd8a1c30cc13be9a3c627c1ca3b19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b3fb349ef94d80328d12e1d72be22dd.setIcon(icon_165cd8a1c30cc13be9a3c627c1ca3b19);
+        
+    
+        var popup_33693229791ea8a142535647ddbe01a3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_67bea404f43797b8d043edd24b4907d9 = $(`<div id="html_67bea404f43797b8d043edd24b4907d9" style="width: 100.0%; height: 100.0%;">             <b>Noir Lux Experience</b><br>             Rating: 4.7<br>             Address: None<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/zKwrqlhxfsRHx7MC5sYcMw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_33693229791ea8a142535647ddbe01a3.setContent(html_67bea404f43797b8d043edd24b4907d9);
+            
+        
+
+        marker_9b3fb349ef94d80328d12e1d72be22dd.bindPopup(popup_33693229791ea8a142535647ddbe01a3)
+        ;
+
+        
+    
+    
+            var marker_44faf9e10800d2cf35798c4111987589 = L.marker(
+                [40.7117091, -74.062755],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_7532cdb28ca671cdcb6dcff34a1af776 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44faf9e10800d2cf35798c4111987589.setIcon(icon_7532cdb28ca671cdcb6dcff34a1af776);
+        
+    
+        var popup_07e8434696c261b99264e6e872c71a1c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f58bd85dc690c9f67ac7542a9acb9173 = $(`<div id="html_f58bd85dc690c9f67ac7542a9acb9173" style="width: 100.0%; height: 100.0%;">             <b>The Grind Shop</b><br>             Rating: 4.6<br>             Address: 360 Communipaw Ave<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/moLzFmNSigKpdSTOkLB9RA/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_07e8434696c261b99264e6e872c71a1c.setContent(html_f58bd85dc690c9f67ac7542a9acb9173);
+            
+        
+
+        marker_44faf9e10800d2cf35798c4111987589.bindPopup(popup_07e8434696c261b99264e6e872c71a1c)
+        ;
+
+        
+    
+    
+            var marker_c58f3a3b45e30124abcc82e780d20b6e = L.marker(
+                [40.726034561261365, -74.03855199152545],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_e2844dabb990feb4e11d2acbd2883947 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c58f3a3b45e30124abcc82e780d20b6e.setIcon(icon_e2844dabb990feb4e11d2acbd2883947);
+        
+    
+        var popup_b12a34eb6802e3a30d506bdc6347f966 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e18bf8fff16a7b2409d6526bbac553b = $(`<div id="html_6e18bf8fff16a7b2409d6526bbac553b" style="width: 100.0%; height: 100.0%;">             <b>Art Mango</b><br>             Rating: 4.6<br>             Address: 30 Mall Dr W<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/tFBR0ZVZ-1C2xmgEzOFpDg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_b12a34eb6802e3a30d506bdc6347f966.setContent(html_6e18bf8fff16a7b2409d6526bbac553b);
+            
+        
+
+        marker_c58f3a3b45e30124abcc82e780d20b6e.bindPopup(popup_b12a34eb6802e3a30d506bdc6347f966)
+        ;
+
+        
+    
+    
+            var marker_c4d8d09a63cff911cae718222df784ae = L.marker(
+                [40.760196, -73.989517],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_698f298ed110d4d0ccc647596cecd8a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c4d8d09a63cff911cae718222df784ae.setIcon(icon_698f298ed110d4d0ccc647596cecd8a9);
+        
+    
+        var popup_7a6ba961fb8e8897faf3d0d04cdaa18e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_64a69e1e3345bab5cd8e20b6ab68c1d1 = $(`<div id="html_64a69e1e3345bab5cd8e20b6ab68c1d1" style="width: 100.0%; height: 100.0%;">             <b>S'Aimer</b><br>             Rating: 4.6<br>             Address: 338 W 46th St<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/MfXsu2RQz4FsHUqRW3iTKw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_7a6ba961fb8e8897faf3d0d04cdaa18e.setContent(html_64a69e1e3345bab5cd8e20b6ab68c1d1);
+            
+        
+
+        marker_c4d8d09a63cff911cae718222df784ae.bindPopup(popup_7a6ba961fb8e8897faf3d0d04cdaa18e)
+        ;
+
+        
+    
+    
+            var marker_f1e51fffeaf9f52800108cb06bc3e9ba = L.marker(
+                [40.659075, -73.960239],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_8e36a0a6cda5f1aba4f33d637c98221b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f1e51fffeaf9f52800108cb06bc3e9ba.setIcon(icon_8e36a0a6cda5f1aba4f33d637c98221b);
+        
+    
+        var popup_63f12826c9019a4aa60d37eacec151d6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_51251e17736dacc9a391247d84da4018 = $(`<div id="html_51251e17736dacc9a391247d84da4018" style="width: 100.0%; height: 100.0%;">             <b>Tafari Tribe</b><br>             Rating: 4.6<br>             Address: 591 Flatbush Ave<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/BZoIgbTt8kPP0n9VWucQcg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_63f12826c9019a4aa60d37eacec151d6.setContent(html_51251e17736dacc9a391247d84da4018);
+            
+        
+
+        marker_f1e51fffeaf9f52800108cb06bc3e9ba.bindPopup(popup_63f12826c9019a4aa60d37eacec151d6)
+        ;
+
+        
+    
+    
+            var marker_76ed6ccb0a7888210e18a83bd178a78c = L.marker(
+                [40.67834, -73.96363],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_9f85d388cefdc43a9f620bb346336e81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_76ed6ccb0a7888210e18a83bd178a78c.setIcon(icon_9f85d388cefdc43a9f620bb346336e81);
+        
+    
+        var popup_954a952418f6f02bba1f670c32f489e4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b4869f28196bf7bea912a85a404d592a = $(`<div id="html_b4869f28196bf7bea912a85a404d592a" style="width: 100.0%; height: 100.0%;">             <b>Nurish</b><br>             Rating: 4.6<br>             Address: 637 Washington Ave<br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/-CqrbH2xiC6n-3fmf4VDJw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_954a952418f6f02bba1f670c32f489e4.setContent(html_b4869f28196bf7bea912a85a404d592a);
+            
+        
+
+        marker_76ed6ccb0a7888210e18a83bd178a78c.bindPopup(popup_954a952418f6f02bba1f670c32f489e4)
+        ;
+
+        
+    
+    
+            var marker_164b913ef35f9ab468e42eba5f18e1d6 = L.marker(
+                [40.79766393411868, -74.14547809203437],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_f25f70f2a6aca9dbc6bdcc404cae5c5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_164b913ef35f9ab468e42eba5f18e1d6.setIcon(icon_f25f70f2a6aca9dbc6bdcc404cae5c5b);
+        
+    
+        var popup_7a48229c10fd2ca7a04e329b00fa98d5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5c227c484d50174cdb842e6b9d2725bf = $(`<div id="html_5c227c484d50174cdb842e6b9d2725bf" style="width: 100.0%; height: 100.0%;">             <b>Blake N Kylee's Creole Kitchen</b><br>             Rating: 4.5<br>             Address: 500 Cortlandt St<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/Qv8zGazx5xFEUZCDXadTFg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_7a48229c10fd2ca7a04e329b00fa98d5.setContent(html_5c227c484d50174cdb842e6b9d2725bf);
+            
+        
+
+        marker_164b913ef35f9ab468e42eba5f18e1d6.bindPopup(popup_7a48229c10fd2ca7a04e329b00fa98d5)
+        ;
+
+        
+    
+    
+            var marker_0894603bb6b7a9da66792a7166ef7799 = L.marker(
+                [40.718804, -74.03936],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_dffa6d4bc8777fa9add4c55da3b25967 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0894603bb6b7a9da66792a7166ef7799.setIcon(icon_dffa6d4bc8777fa9add4c55da3b25967);
+        
+    
+        var popup_6994a7e6b5fe389e8aabf7dbb55c242d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7fc978640176fd05be8ff322ec55d3af = $(`<div id="html_7fc978640176fd05be8ff322ec55d3af" style="width: 100.0%; height: 100.0%;">             <b>The Power Plant Cafe by BoyceMode</b><br>             Rating: 4.5<br>             Address: 60 Christopher Columbus Dr<br>             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/E2kDvGHMEISwQxjgwufiMg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_6994a7e6b5fe389e8aabf7dbb55c242d.setContent(html_7fc978640176fd05be8ff322ec55d3af);
+            
+        
+
+        marker_0894603bb6b7a9da66792a7166ef7799.bindPopup(popup_6994a7e6b5fe389e8aabf7dbb55c242d)
+        ;
+
+        
+    
+    
+            var marker_a200e2ab7b7a7cd6a146b354fe39eb64 = L.marker(
+                [40.70365992604873, -74.0802201256156],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_8d5558551d820102651393450d099df8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a200e2ab7b7a7cd6a146b354fe39eb64.setIcon(icon_8d5558551d820102651393450d099df8);
+        
+    
+        var popup_ec2b94d68d93e04c2bd8a6de4f26a6ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ec087c9054f158ea133d9cb250044c5b = $(`<div id="html_ec087c9054f158ea133d9cb250044c5b" style="width: 100.0%; height: 100.0%;">             <b>Space Pizza</b><br>             Rating: 4.5<br>             Address: 504 Ocean Ave<br>             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/xRzATPi_UO6qfSWhJEKXsw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_ec2b94d68d93e04c2bd8a6de4f26a6ee.setContent(html_ec087c9054f158ea133d9cb250044c5b);
+            
+        
+
+        marker_a200e2ab7b7a7cd6a146b354fe39eb64.bindPopup(popup_ec2b94d68d93e04c2bd8a6de4f26a6ee)
+        ;
+
+        
+    
+    
+            var marker_8621e8322100910a91ba4cff612bfaa1 = L.marker(
+                [40.73457040120189, -74.07179250334163],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_9769a354d60f4caf92fce68f9f4875f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8621e8322100910a91ba4cff612bfaa1.setIcon(icon_9769a354d60f4caf92fce68f9f4875f5);
+        
+    
+        var popup_fb26c800da8315b59182d11a874f70f5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5314b171f7e1149ca9aa220bde49cd5c = $(`<div id="html_5314b171f7e1149ca9aa220bde49cd5c" style="width: 100.0%; height: 100.0%;">             <b>Jamel Harris -Kingdom Notary Services</b><br>             Rating: 5.0<br>             Address: <br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/JfbpgtnEqkXm7TZiC5UiFA/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_fb26c800da8315b59182d11a874f70f5.setContent(html_5314b171f7e1149ca9aa220bde49cd5c);
+            
+        
+
+        marker_8621e8322100910a91ba4cff612bfaa1.bindPopup(popup_fb26c800da8315b59182d11a874f70f5)
+        ;
+
+        
+    
+    
+            var marker_da71c1915c2f7150c79a2502ea5789dc = L.marker(
+                [40.7342871794987, -74.1347641466091],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_4cfce50198b245e3debfa92d362bc8ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_da71c1915c2f7150c79a2502ea5789dc.setIcon(icon_4cfce50198b245e3debfa92d362bc8ec);
+        
+    
+        var popup_1ed1c8a67b7ad530f51ebb1ab00a1627 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dec85f024f785313e8d370385bae3654 = $(`<div id="html_dec85f024f785313e8d370385bae3654" style="width: 100.0%; height: 100.0%;">             <b>Blueprint Cafe Lounge</b><br>             Rating: 4.5<br>             Address: 369 Raymond Blvd<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/aNUDGQrSYh51xMfEURqrrw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_1ed1c8a67b7ad530f51ebb1ab00a1627.setContent(html_dec85f024f785313e8d370385bae3654);
+            
+        
+
+        marker_da71c1915c2f7150c79a2502ea5789dc.bindPopup(popup_1ed1c8a67b7ad530f51ebb1ab00a1627)
+        ;
+
+        
+    
+    
+            var marker_7e68116ab467be19fe21eed4a823d4de = L.marker(
+                [40.72387, -74.00491],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_0ac818df990d95f881bfc6bfae2351c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e68116ab467be19fe21eed4a823d4de.setIcon(icon_0ac818df990d95f881bfc6bfae2351c2);
+        
+    
+        var popup_55d5b4ec952efe3d70b210d399a74640 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f70c3cd737c10e7ad49ec80b07c6eada = $(`<div id="html_f70c3cd737c10e7ad49ec80b07c6eada" style="width: 100.0%; height: 100.0%;">             <b>Jerrell’s BETR BRGR</b><br>             Rating: 4.5<br>             Address: 117 6th Ave<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/II831cs0THvlZ1aUe5QtpQ/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_55d5b4ec952efe3d70b210d399a74640.setContent(html_f70c3cd737c10e7ad49ec80b07c6eada);
+            
+        
+
+        marker_7e68116ab467be19fe21eed4a823d4de.bindPopup(popup_55d5b4ec952efe3d70b210d399a74640)
+        ;
+
+        
+    
+    
+            var marker_a542da6e6f22f7f47df6bc80bb6cc421 = L.marker(
+                [40.750374054977584, -73.97613300211597],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_788792ae9eb6d88f61e5de13feb3d29f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a542da6e6f22f7f47df6bc80bb6cc421.setIcon(icon_788792ae9eb6d88f61e5de13feb3d29f);
+        
+    
+        var popup_46c425fdb1e4e2d0211d7ca09bd4fc6e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f6164aa1ced328f1e16ed8d6f0d7ec0 = $(`<div id="html_8f6164aa1ced328f1e16ed8d6f0d7ec0" style="width: 100.0%; height: 100.0%;">             <b>Dùndú</b><br>             Rating: 4.5<br>             Address: 140 E41st St<br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/J_PQlwtOR4jK96k7I74G3A/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_46c425fdb1e4e2d0211d7ca09bd4fc6e.setContent(html_8f6164aa1ced328f1e16ed8d6f0d7ec0);
+            
+        
+
+        marker_a542da6e6f22f7f47df6bc80bb6cc421.bindPopup(popup_46c425fdb1e4e2d0211d7ca09bd4fc6e)
+        ;
+
+        
+    
+    
+            var marker_5598c0644d6ebfc23c7366c07cc20550 = L.marker(
+                [40.704261, -73.986284],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_f7ff5a8f422db0a690453f3a352dc97e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5598c0644d6ebfc23c7366c07cc20550.setIcon(icon_f7ff5a8f422db0a690453f3a352dc97e);
+        
+    
+        var popup_ad9c78a097dce2ca1a22465725172fdc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e449310ca073ac50b7412eebe6307b6a = $(`<div id="html_e449310ca073ac50b7412eebe6307b6a" style="width: 100.0%; height: 100.0%;">             <b>HEAL Veterinary Hospital</b><br>             Rating: 4.4<br>             Address: 25 Jay St<br>             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/UpTvYQCcPZb-V6GSgQC7Eg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_ad9c78a097dce2ca1a22465725172fdc.setContent(html_e449310ca073ac50b7412eebe6307b6a);
+            
+        
+
+        marker_5598c0644d6ebfc23c7366c07cc20550.bindPopup(popup_ad9c78a097dce2ca1a22465725172fdc)
+        ;
+
+        
+    
+    
+            var marker_fa1f40d99e7edbe2910e84f6fb91c9b1 = L.marker(
+                [40.678458, -73.964143],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_73060f1f53bba85e54887c55934357f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa1f40d99e7edbe2910e84f6fb91c9b1.setIcon(icon_73060f1f53bba85e54887c55934357f9);
+        
+    
+        var popup_36203dfd1b77917836381b1572d1dbd8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2323b6d8de35766d96df914d02041468 = $(`<div id="html_2323b6d8de35766d96df914d02041468" style="width: 100.0%; height: 100.0%;">             <b>The Bakery on Bergen</b><br>             Rating: 4.4<br>             Address: 740 Bergen St<br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/gv1XeFdPZL_DGQa6OnLytw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_36203dfd1b77917836381b1572d1dbd8.setContent(html_2323b6d8de35766d96df914d02041468);
+            
+        
+
+        marker_fa1f40d99e7edbe2910e84f6fb91c9b1.bindPopup(popup_36203dfd1b77917836381b1572d1dbd8)
+        ;
+
+        
+    
+    
+            var marker_04f9b5df851b0ac40e01bc4c68bd493c = L.marker(
+                [40.717937, -74.050175],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_d6c1c8cfd28cede3f6f00277e94f5eb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04f9b5df851b0ac40e01bc4c68bd493c.setIcon(icon_d6c1c8cfd28cede3f6f00277e94f5eb9);
+        
+    
+        var popup_a85069d4b246a2b39758ed7b21099201 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_14258fefb54279d789ebbd91176baaa7 = $(`<div id="html_14258fefb54279d789ebbd91176baaa7" style="width: 100.0%; height: 100.0%;">             <b>Crepe Guru</b><br>             Rating: 4.4<br>             Address: 110 Bright St<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/eOS64BgP2R1qql2Vlyeh1A/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_a85069d4b246a2b39758ed7b21099201.setContent(html_14258fefb54279d789ebbd91176baaa7);
+            
+        
+
+        marker_04f9b5df851b0ac40e01bc4c68bd493c.bindPopup(popup_a85069d4b246a2b39758ed7b21099201)
+        ;
+
+        
+    
+    
+            var marker_ce80c7ca70cef30bbeb9aba53c1460dd = L.marker(
+                [40.77281159063433, -73.983104],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_1ae2814a6d3e0a0ec4b304bf78a15534 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce80c7ca70cef30bbeb9aba53c1460dd.setIcon(icon_1ae2814a6d3e0a0ec4b304bf78a15534);
+        
+    
+        var popup_dbdbcb1e31cc5d48022012492501483c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dea5b4dacadc32ab2810b9824ee927a2 = $(`<div id="html_dea5b4dacadc32ab2810b9824ee927a2" style="width: 100.0%; height: 100.0%;">             <b>Tatiana By Kwame Onwuachi</b><br>             Rating: 4.4<br>             Address: 10 Lincoln Center Plz<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/Guo8PDf2oTOlTiUYUJLEzA/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_dbdbcb1e31cc5d48022012492501483c.setContent(html_dea5b4dacadc32ab2810b9824ee927a2);
+            
+        
+
+        marker_ce80c7ca70cef30bbeb9aba53c1460dd.bindPopup(popup_dbdbcb1e31cc5d48022012492501483c)
+        ;
+
+        
+    
+    
+            var marker_f8c07c32b715d71b386687ff0d586207 = L.marker(
+                [40.67565, -73.97813],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_68ac9ebaded97b3d687848d4a6f67634 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f8c07c32b715d71b386687ff0d586207.setIcon(icon_68ac9ebaded97b3d687848d4a6f67634);
+        
+    
+        var popup_429c499d2564ccf69c0e0adca25c2274 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8dc1c8ff6e68a11f0f551ac0608a7be7 = $(`<div id="html_8dc1c8ff6e68a11f0f551ac0608a7be7" style="width: 100.0%; height: 100.0%;">             <b>Flamingobaby Kitchen</b><br>             Rating: 4.4<br>             Address: 787 Union St<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/reanzCemJttTW4ZXkskELA/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_429c499d2564ccf69c0e0adca25c2274.setContent(html_8dc1c8ff6e68a11f0f551ac0608a7be7);
+            
+        
+
+        marker_f8c07c32b715d71b386687ff0d586207.bindPopup(popup_429c499d2564ccf69c0e0adca25c2274)
+        ;
+
+        
+    
+    
+            var marker_f3001c59f46e3fc7c0be299f0fef7a58 = L.marker(
+                [40.720444, -73.984529],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_d04bf081f40540813cb23585453ff9f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3001c59f46e3fc7c0be299f0fef7a58.setIcon(icon_d04bf081f40540813cb23585453ff9f6);
+        
+    
+        var popup_3ef7ea16862f9adbf5f908f039919bea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b77c90a9f21a95a44105d9f0bc1f5cdc = $(`<div id="html_b77c90a9f21a95a44105d9f0bc1f5cdc" style="width: 100.0%; height: 100.0%;">             <b>Rebel Restaurant and Bar</b><br>             Rating: 4.3<br>             Address: 29 Clinton St<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/oDAony63H6JtgqNYaC6PEg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_3ef7ea16862f9adbf5f908f039919bea.setContent(html_b77c90a9f21a95a44105d9f0bc1f5cdc);
+            
+        
+
+        marker_f3001c59f46e3fc7c0be299f0fef7a58.bindPopup(popup_3ef7ea16862f9adbf5f908f039919bea)
+        ;
+
+        
+    
+    
+            var marker_fe23235e887f903f231fb3783d26f518 = L.marker(
+                [40.718431582680154, -73.9901878969007],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_9192b6b3d161cfbcfb15b5a0e58ac592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe23235e887f903f231fb3783d26f518.setIcon(icon_9192b6b3d161cfbcfb15b5a0e58ac592);
+        
+    
+        var popup_c1badd917a84689161bd48af8568fa98 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_38ed2fa7cb9d4f7227d3c0f7ed23492e = $(`<div id="html_38ed2fa7cb9d4f7227d3c0f7ed23492e" style="width: 100.0%; height: 100.0%;">             <b>Urban Dessert Lab</b><br>             Rating: 4.3<br>             Address: 95 Orchard St<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/ZrdHzz2GXmNSyldyalNmsg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_c1badd917a84689161bd48af8568fa98.setContent(html_38ed2fa7cb9d4f7227d3c0f7ed23492e);
+            
+        
+
+        marker_fe23235e887f903f231fb3783d26f518.bindPopup(popup_c1badd917a84689161bd48af8568fa98)
+        ;
+
+        
+    
+    
+            var marker_a454e1786e8e04b04a28deb12be2447c = L.marker(
+                [40.76643, -73.98843],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_6745e64b254a436f8149358daf3c8e49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a454e1786e8e04b04a28deb12be2447c.setIcon(icon_6745e64b254a436f8149358daf3c8e49);
+        
+    
+        var popup_dc5642323f9e54ca505b634381ed9736 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8c0954cb859211f7ceb1a8194d2308f2 = $(`<div id="html_8c0954cb859211f7ceb1a8194d2308f2" style="width: 100.0%; height: 100.0%;">             <b>Chef Mom Cafe 424</b><br>             Rating: 4.3<br>             Address: 426 W 54th St<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/ieP6mqe1Z6VTw9ZwX8jaTA/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_dc5642323f9e54ca505b634381ed9736.setContent(html_8c0954cb859211f7ceb1a8194d2308f2);
+            
+        
+
+        marker_a454e1786e8e04b04a28deb12be2447c.bindPopup(popup_dc5642323f9e54ca505b634381ed9736)
+        ;
+
+        
+    
+    
+            var marker_05cbb54d674b99fe0659d2639afac1bb = L.marker(
+                [40.79355174742549, -73.9667939327137],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_a69e8963fe356acc582b731aa48cea7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_05cbb54d674b99fe0659d2639afac1bb.setIcon(icon_a69e8963fe356acc582b731aa48cea7f);
+        
+    
+        var popup_4541e64ab80fb5834484ad461c6fe57e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3a5f8c7bceb17a93230709ca8dac2da7 = $(`<div id="html_3a5f8c7bceb17a93230709ca8dac2da7" style="width: 100.0%; height: 100.0%;">             <b>Jamrock Jerk</b><br>             Rating: 4.3<br>             Address: 775 Columbus Ave<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/RXDeNSwL1EmhKRIqOQD_vQ/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_4541e64ab80fb5834484ad461c6fe57e.setContent(html_3a5f8c7bceb17a93230709ca8dac2da7);
+            
+        
+
+        marker_05cbb54d674b99fe0659d2639afac1bb.bindPopup(popup_4541e64ab80fb5834484ad461c6fe57e)
+        ;
+
+        
+    
+    
+            var marker_43bf5004aad8a8fbef123409ef2cb047 = L.marker(
+                [40.7265816, -74.0640523],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_db76ed1bb5a7bb8a86d548b549e1e298 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_43bf5004aad8a8fbef123409ef2cb047.setIcon(icon_db76ed1bb5a7bb8a86d548b549e1e298);
+        
+    
+        var popup_ec35009b284c18f54d193d9b171f4f99 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d98ed9c7c6f6f94610c1d9b743a474a1 = $(`<div id="html_d98ed9c7c6f6f94610c1d9b743a474a1" style="width: 100.0%; height: 100.0%;">             <b>Urban Rose Boutique & Salon</b><br>             Rating: 4.3<br>             Address: 325 Summit Ave<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/7Ein4eaeLaFz0BCMAJU-fQ/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_ec35009b284c18f54d193d9b171f4f99.setContent(html_d98ed9c7c6f6f94610c1d9b743a474a1);
+            
+        
+
+        marker_43bf5004aad8a8fbef123409ef2cb047.bindPopup(popup_ec35009b284c18f54d193d9b171f4f99)
+        ;
+
+        
+    
+    
+            var marker_55fa443ad59844678a40dee5560ac53a = L.marker(
+                [40.71239, -74.01243],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_5d247ea4bffa882fe6d94b4eeb8cbcd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55fa443ad59844678a40dee5560ac53a.setIcon(icon_5d247ea4bffa882fe6d94b4eeb8cbcd4);
+        
+    
+        var popup_81c8defaadc6df42314c07c0c991008f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_860d21d3cdc28281e4bb428898ca7fce = $(`<div id="html_860d21d3cdc28281e4bb428898ca7fce" style="width: 100.0%; height: 100.0%;">             <b>Metropolis by Marcus Samuelsson</b><br>             Rating: 4.2<br>             Address: 251 Fulton St Located In Perelman<br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/l-Jiws8wzjs7uJB3XrIFXA/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_81c8defaadc6df42314c07c0c991008f.setContent(html_860d21d3cdc28281e4bb428898ca7fce);
+            
+        
+
+        marker_55fa443ad59844678a40dee5560ac53a.bindPopup(popup_81c8defaadc6df42314c07c0c991008f)
+        ;
+
+        
+    
+    
+            var marker_ad56ec07b399aefa05b107ff385961a8 = L.marker(
+                [40.761096465620824, -73.99031151745837],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_40d0edefe0b61172f679eb6f6ab409f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad56ec07b399aefa05b107ff385961a8.setIcon(icon_40d0edefe0b61172f679eb6f6ab409f3);
+        
+    
+        var popup_448aa9ba73021d8510c7e1de71b2b2a7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3fe14ec6ab1def74e5f7b0c02acb0441 = $(`<div id="html_3fe14ec6ab1def74e5f7b0c02acb0441" style="width: 100.0%; height: 100.0%;">             <b>Jasmine's Caribbean Cuisine</b><br>             Rating: 4.2<br>             Address: 371 West 46th St<br>             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/FnVfL-4gzNyJiccWBUeEpA/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_448aa9ba73021d8510c7e1de71b2b2a7.setContent(html_3fe14ec6ab1def74e5f7b0c02acb0441);
+            
+        
+
+        marker_ad56ec07b399aefa05b107ff385961a8.bindPopup(popup_448aa9ba73021d8510c7e1de71b2b2a7)
+        ;
+
+        
+    
+    
+            var marker_3a8251b69a27d8e0106ca01d060d5d98 = L.marker(
+                [40.71849776034073, -74.08339899293556],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_825c54f12cae6950167a23e79929a59d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a8251b69a27d8e0106ca01d060d5d98.setIcon(icon_825c54f12cae6950167a23e79929a59d);
+        
+    
+        var popup_306d77bf63f5d2dc4f5ffee9cdc0d8aa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7a0eb18ba30f38fd15e1cf39d9f8d1f6 = $(`<div id="html_7a0eb18ba30f38fd15e1cf39d9f8d1f6" style="width: 100.0%; height: 100.0%;">             <b>Amazing Beauty Supplies</b><br>             Rating: 4.2<br>             Address: 516 W Side Ave J Cy<br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/15RJGzrGOvQRakYRBmI3JQ/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_306d77bf63f5d2dc4f5ffee9cdc0d8aa.setContent(html_7a0eb18ba30f38fd15e1cf39d9f8d1f6);
+            
+        
+
+        marker_3a8251b69a27d8e0106ca01d060d5d98.bindPopup(popup_306d77bf63f5d2dc4f5ffee9cdc0d8aa)
+        ;
+
+        
+    
+    
+            var marker_5d8737f690516dac5c966185fff83388 = L.marker(
+                [40.72662803795464, -73.98440476938023],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_1ee7a9a68d2f1493f879c2c83a065af3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d8737f690516dac5c966185fff83388.setIcon(icon_1ee7a9a68d2f1493f879c2c83a065af3);
+        
+    
+        var popup_acc2eb46de6b68271ccf17f49751e7a8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3819a391273e074c631f187ecff66cb6 = $(`<div id="html_3819a391273e074c631f187ecff66cb6" style="width: 100.0%; height: 100.0%;">             <b>Cadence</b><br>             Rating: 4.2<br>             Address: 111 E 7th St<br>             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/78N5G7yNMdsYPCvTpJIpCw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_acc2eb46de6b68271ccf17f49751e7a8.setContent(html_3819a391273e074c631f187ecff66cb6);
+            
+        
+
+        marker_5d8737f690516dac5c966185fff83388.bindPopup(popup_acc2eb46de6b68271ccf17f49751e7a8)
+        ;
+
+        
+    
+    
+            var marker_7493f556dc3811300791b2ca014f5194 = L.marker(
+                [40.790836, -74.0586258],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_63e5d7fec30056ce7072ca93a13f4fcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7493f556dc3811300791b2ca014f5194.setIcon(icon_63e5d7fec30056ce7072ca93a13f4fcf);
+        
+    
+        var popup_f591c3324bd1af80726d08e8f3656693 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f5a07acf315b590b9cc687538af06ff0 = $(`<div id="html_f5a07acf315b590b9cc687538af06ff0" style="width: 100.0%; height: 100.0%;">             <b>The Dublin Yard</b><br>             Rating: 4.1<br>             Address: 146 Front St<br>             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/i2eSTzR_7LgMLwHa6-veuw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_f591c3324bd1af80726d08e8f3656693.setContent(html_f5a07acf315b590b9cc687538af06ff0);
+            
+        
+
+        marker_7493f556dc3811300791b2ca014f5194.bindPopup(popup_f591c3324bd1af80726d08e8f3656693)
+        ;
+
+        
+    
+    
+            var marker_d7d179a150d2bdc5d89a110b340a1ed3 = L.marker(
+                [40.71937963445847, -73.98511200342833],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_b421b70aab7e44894e3d49fb778c2f5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7d179a150d2bdc5d89a110b340a1ed3.setIcon(icon_b421b70aab7e44894e3d49fb778c2f5f);
+        
+    
+        var popup_7460189e59fb35e6abcdde0ba2c82c09 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6cf4d4e5f2cca7ed6c6b4a806c4cec1e = $(`<div id="html_6cf4d4e5f2cca7ed6c6b4a806c4cec1e" style="width: 100.0%; height: 100.0%;">             <b>Datz Deli</b><br>             Rating: 4.1<br>             Address: 69 Clinton St<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/6FrqtlA3ckknItwy9QYDjg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_7460189e59fb35e6abcdde0ba2c82c09.setContent(html_6cf4d4e5f2cca7ed6c6b4a806c4cec1e);
+            
+        
+
+        marker_d7d179a150d2bdc5d89a110b340a1ed3.bindPopup(popup_7460189e59fb35e6abcdde0ba2c82c09)
+        ;
+
+        
+    
+    
+            var marker_f82395569485425feb2a3da870014bdf = L.marker(
+                [40.7115969, -74.0709159],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_f858b95ddfcf1dd2e33e6afc52e5dafb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f82395569485425feb2a3da870014bdf.setIcon(icon_f858b95ddfcf1dd2e33e6afc52e5dafb);
+        
+    
+        var popup_7076ae3c21f78f507edabb461f03552b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_95a3256de5f468917f3f1e8fa98f442b = $(`<div id="html_95a3256de5f468917f3f1e8fa98f442b" style="width: 100.0%; height: 100.0%;">             <b>Light Rail Cafe</b><br>             Rating: 4.1<br>             Address: 237 Randolph Ave<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/v919sUP2k7XjFPN74K91ng/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_7076ae3c21f78f507edabb461f03552b.setContent(html_95a3256de5f468917f3f1e8fa98f442b);
+            
+        
+
+        marker_f82395569485425feb2a3da870014bdf.bindPopup(popup_7076ae3c21f78f507edabb461f03552b)
+        ;
+
+        
+    
+    
+            var marker_ef16df5712cd5d385a18309bbb4f4780 = L.marker(
+                [40.71850573859628, -74.0048807036876],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_bc58dde77f7328da34d9a3312d326a11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef16df5712cd5d385a18309bbb4f4780.setIcon(icon_bc58dde77f7328da34d9a3312d326a11);
+        
+    
+        var popup_a1db396396bd239851d2831d9ab982ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a5657fa48d63f92e08a15609f8a83da = $(`<div id="html_0a5657fa48d63f92e08a15609f8a83da" style="width: 100.0%; height: 100.0%;">             <b>Filé Gumbo Bar</b><br>             Rating: 4.0<br>             Address: 275 Church St<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/NtaJeaiCpSNx2VAA_yjFAA/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_a1db396396bd239851d2831d9ab982ec.setContent(html_0a5657fa48d63f92e08a15609f8a83da);
+            
+        
+
+        marker_ef16df5712cd5d385a18309bbb4f4780.bindPopup(popup_a1db396396bd239851d2831d9ab982ec)
+        ;
+
+        
+    
+    
+            var marker_2bfe77481ec53640cb1374c40751f85a = L.marker(
+                [40.71482, -73.96178],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_eafb87797a4451d52cb75a2a98f64658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2bfe77481ec53640cb1374c40751f85a.setIcon(icon_eafb87797a4451d52cb75a2a98f64658);
+        
+    
+        var popup_64444a334108e0cc7ab67af6cf5791bf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1949f58a4e45213bc882f0508929f826 = $(`<div id="html_1949f58a4e45213bc882f0508929f826" style="width: 100.0%; height: 100.0%;">             <b>Gifted BK</b><br>             Rating: 5.0<br>             Address: 153 Grand St<br>             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/qF5ydMrkvfW-t8Nrg5FR4A/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_64444a334108e0cc7ab67af6cf5791bf.setContent(html_1949f58a4e45213bc882f0508929f826);
+            
+        
+
+        marker_2bfe77481ec53640cb1374c40751f85a.bindPopup(popup_64444a334108e0cc7ab67af6cf5791bf)
+        ;
+
+        
+    
+    
+            var marker_5dc8975f57efad723304e86dcc689242 = L.marker(
+                [40.711328187345075, -74.01098064453231],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_68109152157cde40bc42d7e928cc0704 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5dc8975f57efad723304e86dcc689242.setIcon(icon_68109152157cde40bc42d7e928cc0704);
+        
+    
+        var popup_885e82ba48041664c1dbd30a0bfe7fc5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c0de4f9ddcd144ceb298a28cf18c7420 = $(`<div id="html_c0de4f9ddcd144ceb298a28cf18c7420" style="width: 100.0%; height: 100.0%;">             <b>Pretty Well Beauty</b><br>             Rating: 5.0<br>             Address: 185 Greenwich Street<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/vWbxpJZYhZD8y9wCyz0gBg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_885e82ba48041664c1dbd30a0bfe7fc5.setContent(html_c0de4f9ddcd144ceb298a28cf18c7420);
+            
+        
+
+        marker_5dc8975f57efad723304e86dcc689242.bindPopup(popup_885e82ba48041664c1dbd30a0bfe7fc5)
+        ;
+
+        
+    
+    
+            var marker_d1c3f416138dc215e177d7118c46e141 = L.marker(
+                [40.79163, -74.13148],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_a5412840b4ae5e9a1c65dccfbfe7ba07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1c3f416138dc215e177d7118c46e141.setIcon(icon_a5412840b4ae5e9a1c65dccfbfe7ba07);
+        
+    
+        var popup_42a8d21602f125944ff4e526a32d5051 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9ed70c56f7388bf7e5bbac5b8bd86e4a = $(`<div id="html_9ed70c56f7388bf7e5bbac5b8bd86e4a" style="width: 100.0%; height: 100.0%;">             <b>KTB Coffee Shop & Lounge</b><br>             Rating: 4.0<br>             Address: 323 Ridge Rd<br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/_oFq0UhsSE1IiI_p-1PoaA/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_42a8d21602f125944ff4e526a32d5051.setContent(html_9ed70c56f7388bf7e5bbac5b8bd86e4a);
+            
+        
+
+        marker_d1c3f416138dc215e177d7118c46e141.bindPopup(popup_42a8d21602f125944ff4e526a32d5051)
+        ;
+
+        
+    
+    
+            var marker_e9a11c5ad683887f962fff4584ad33e6 = L.marker(
+                [40.80095, -73.96141],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_40d69cf56436fe95f83de9874f62e4f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e9a11c5ad683887f962fff4584ad33e6.setIcon(icon_40d69cf56436fe95f83de9874f62e4f9);
+        
+    
+        var popup_ff33915a3d8dcaa01f9e2295849d4fed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_70130dbdc3162927380cce76f9891786 = $(`<div id="html_70130dbdc3162927380cce76f9891786" style="width: 100.0%; height: 100.0%;">             <b>Freda's Caribbean & Soul Cuisine</b><br>             Rating: 4.0<br>             Address: 993 Columbus Ave<br>             <img src="https://s3-media1.fl.yelpcdn.com/bphoto/4JLFuFJ2kpnpMHO7ZSqvyQ/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_ff33915a3d8dcaa01f9e2295849d4fed.setContent(html_70130dbdc3162927380cce76f9891786);
+            
+        
+
+        marker_e9a11c5ad683887f962fff4584ad33e6.bindPopup(popup_ff33915a3d8dcaa01f9e2295849d4fed)
+        ;
+
+        
+    
+    
+            var marker_1d6ad2e5800ac83e0c8c085f6fe1b76c = L.marker(
+                [40.720422, -73.984525],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_4603fbfef87447b3ef08654a6912adca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d6ad2e5800ac83e0c8c085f6fe1b76c.setIcon(icon_4603fbfef87447b3ef08654a6912adca);
+        
+    
+        var popup_973f354513ea0b92b1ce17ea15dbb6ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_65f630ab4fcdb721f5f6d74fd94b68df = $(`<div id="html_65f630ab4fcdb721f5f6d74fd94b68df" style="width: 100.0%; height: 100.0%;">             <b>Omar's Kitchen and Rum Bar</b><br>             Rating: 3.9<br>             Address: 29A Clinton St<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/FvGOAQkKdE60QKLWk-8eSg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_973f354513ea0b92b1ce17ea15dbb6ca.setContent(html_65f630ab4fcdb721f5f6d74fd94b68df);
+            
+        
+
+        marker_1d6ad2e5800ac83e0c8c085f6fe1b76c.bindPopup(popup_973f354513ea0b92b1ce17ea15dbb6ca)
+        ;
+
+        
+    
+    
+            var marker_894ba1acd2a5149f17f1ed412585a562 = L.marker(
+                [40.71151, -74.00597],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_82aa6a702fb89e1f495c65c7173695f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_894ba1acd2a5149f17f1ed412585a562.setIcon(icon_82aa6a702fb89e1f495c65c7173695f9);
+        
+    
+        var popup_4519d4bfd77fb54cd59bb415da2a4ca2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ec56032e24e84bd1cccf1a14ea7783f7 = $(`<div id="html_ec56032e24e84bd1cccf1a14ea7783f7" style="width: 100.0%; height: 100.0%;">             <b>Brooklyn Chop House</b><br>             Rating: 3.9<br>             Address: 150 Nassau St<br>             <img src="https://s3-media2.fl.yelpcdn.com/bphoto/O6khKVEW_1lWResFFrjgeg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_4519d4bfd77fb54cd59bb415da2a4ca2.setContent(html_ec56032e24e84bd1cccf1a14ea7783f7);
+            
+        
+
+        marker_894ba1acd2a5149f17f1ed412585a562.bindPopup(popup_4519d4bfd77fb54cd59bb415da2a4ca2)
+        ;
+
+        
+    
+    
+            var marker_f836a3dcced96c3fcf8cbe4da4a2997f = L.marker(
+                [40.76857, -73.988581],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_0b8502c42ced90e7809c7d770ab4ba39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f836a3dcced96c3fcf8cbe4da4a2997f.setIcon(icon_0b8502c42ced90e7809c7d770ab4ba39);
+        
+    
+        var popup_85a4ead2556025ab026396952f1b277a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6204202e8a2d4caa5e137795a6e0e9d1 = $(`<div id="html_6204202e8a2d4caa5e137795a6e0e9d1" style="width: 100.0%; height: 100.0%;">             <b>Le Soleil Brillant Restaurant</b><br>             Rating: 3.9<br>             Address: 858 10th Ave<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/LDsi-phe8uVyxAUGPIQcRg/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_85a4ead2556025ab026396952f1b277a.setContent(html_6204202e8a2d4caa5e137795a6e0e9d1);
+            
+        
+
+        marker_f836a3dcced96c3fcf8cbe4da4a2997f.bindPopup(popup_85a4ead2556025ab026396952f1b277a)
+        ;
+
+        
+    
+    
+            var marker_6063fde792be93af6fbb44082999b393 = L.marker(
+                [40.721999, -73.959708],
+                {}
+            ).addTo(map_235ef6b7f7d3a0260205e8cb40c4a1c2);
+        
+    
+            var icon_2379df0eb6b67af2a1f9d745dcbce3be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6063fde792be93af6fbb44082999b393.setIcon(icon_2379df0eb6b67af2a1f9d745dcbce3be);
+        
+    
+        var popup_37a77133e7906831d701bcb8cd7b83e6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9e0bbf7c0b2a7cca82c55c07f568e563 = $(`<div id="html_9e0bbf7c0b2a7cca82c55c07f568e563" style="width: 100.0%; height: 100.0%;">             <b>Kokomo</b><br>             Rating: 3.9<br>             Address: 65 Kent Ave<br>             <img src="https://s3-media3.fl.yelpcdn.com/bphoto/vwklh4xi_ic1WzvYje5oWw/o.jpg" width="150" height="150">             </div>`)[0];
+                popup_37a77133e7906831d701bcb8cd7b83e6.setContent(html_9e0bbf7c0b2a7cca82c55c07f568e563);
+            
+        
+
+        marker_6063fde792be93af6fbb44082999b393.bindPopup(popup_37a77133e7906831d701bcb8cd7b83e6)
+        ;
+
+        
+    
+</script>
+</html>
