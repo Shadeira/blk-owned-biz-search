@@ -35,4 +35,4 @@ I believe other great data resources to tell a compelling story about Black-owne
 
 ## Data Presentation
 Presentation about Black-owned businesses in Jersey City:
-[View Here](dhttps://prezi.com/view/IFdUO38q8i7ICYuWi3j4/)
+[View Here](https://prezi.com/view/IFdUO38q8i7ICYuWi3j4/)
