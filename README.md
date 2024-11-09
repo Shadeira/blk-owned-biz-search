@@ -31,5 +31,8 @@ If the API request fails, an error message with the status code and response det
 ```
 
 ## Data Resources 
-
 I believe other great data resources to tell a compelling story about Black-owned businesses in my neighborhood would be learning more about the data on loans and grants issued to these businesses(SBA Open Data). Understanding what has helped them get started whether through family ownership or external support would provide valuable insight. Additionally, it would be fascinating to explore growth rates, the industries that thrive in the area, and what the community can do to support these businesses. For example, participating in annual festivals, sharing the businesses on social media, or even organizing community events to raise awareness could make a meaningful difference. 
+
+## Data Presentation
+Presentation about Black-owned businesses in Jersey City:
+[View Here](dhttps://prezi.com/view/IFdUO38q8i7ICYuWi3j4/)
